@@ -21,6 +21,48 @@
 			],
 			"group": "build",
 			"detail": "compiler: C:\\sgabiogeo\\mingw64\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with Clang 16.0.4",
+			"command": "C:\\sgabiogeo\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"-fcolor-diagnostics",
+				"-g",
+				"-std=c++20",
+				"${workspaceFolder}\\*.cpp",
+				"-o",
+				"${fileDirname}\\Abschluss.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\sgabiogeo\\mingw64\\bin\\clang++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build with MSVC",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/std:c++latest",
+				"/EHsc",
+				"/Fe:",
+				"${fileDirname}\\Abschluss.exe",
+				"${workspaceFolder}\\*.cpp"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"detail": "compiler: cl.exe"
 		}
 	]
 }
