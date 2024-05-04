@@ -1,16 +1,24 @@
+// To load the iostream library
 #include <iostream>
 
 consteval int get_value() {
     return 3;
 }
 
-int main(){
-    constexpr int value = get_value();
-    std::cout << "value : " << value << std::endl;
+
+int main(int argc, char **argv){
+    // constexpr int value = get_value();
+
+    // Statement in c++
+    int firstNumber = 12;
+    int secondNumber = 9;
+    int sum = firstNumber + secondNumber;
+    std::cout << "The sum of the two numbers is : " << sum << std::endl;
 }
-// One line comment
 
 /*
-Multiple lines of comments.
-Another line of comment
+There are three types of errors,
+    - the compile time errors
+    - the runtime errors
+    - warnings
 */
