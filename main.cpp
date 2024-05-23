@@ -1,6 +1,7 @@
 // To load the iostream library
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 consteval int get_value() {
     return 3;
@@ -46,8 +47,34 @@ int main(int argc, char **argv){
     int lion_count{}; // initialize to zero
     int dog_count{10}; // initialize to 10 as a specific number
     int cat_count{15};
-    // Use expression as initializer
+    // Use expression as initializer:
     int domesticated_animals{dog_count + cat_count};
+
+    // Initializing fractional numbers:
+    float num5 {1.12345678901234567890f};
+    double num6 {1.12345678901234567890};
+    long double num7 {1.12345678901234567890L};
+
+    double num8 {6.02e23};
+
+    std::cout << std::setprecision(20);
+    std::cout << "number5 is : " << num5 << std::endl;
+    std::cout << "number6 is : " << num6 << std::endl;
+    std::cout << "number7 is : " << num7 << std::endl;
+    std::cout << "number8 is : " << num8 << std::endl;
+
+    // Booleans of cpp
+    bool red_light {false};
+    bool green_light {false};
+
+    std::cout << red_light << std::endl;
+    std::cout << green_light << std::endl; // or use std::boolalpha to return true of false
+
+    if(red_light==true){
+        std::cout << "Stop!" << std::endl;
+    }else{
+        std::cout << "Pass!" << std::endl;
+    } 
 }
 
 /*
