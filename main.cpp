@@ -3,33 +3,23 @@
 #include <string>
 #include <iomanip>
 
-consteval int get_value() {
-    return 3;
-}
+int main(){
+    // Precedence and Associativity
+    // Pre- and Postfix increment/decrement
+    int value {5};
+    value = 5;
+    std::cout << value << std::endl;
+    std::cout << value++ << std::endl;
+    std::cout << value << std::endl;
 
-int addNumbers(int first_param, int second_param){
-    int sum = first_param + second_param;
-    return sum;
-}
+    value = 5;
+    std::cout << value << std::endl;
+    std::cout << ++value << std::endl;
+    std::cout << value << std::endl;
 
-std::string getNames(){
-    std::string full_name;
-    std::cout << "Please type in your full name:" 
-        << std::endl;
-    // Getting data with spaces
-    std::getline(std::cin, full_name);
-    return full_name;
-}
+    return 0;
 
-int main(int argc, char **argv){
-    constexpr int value = get_value();
-
-    // Statement in c++
-    int summation = addNumbers(-2, 1);
-    std::cout << "The sum of the two numbers is : " 
-        << summation << std::endl;
-    std::string Name = getNames();
-    std::cout << "Hello, " << Name << std::endl;
+    //Compound assignment operator
 }
 
 /*
