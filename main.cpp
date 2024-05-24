@@ -66,7 +66,8 @@ int main(int argc, char **argv){
     // Booleans of cpp
     bool red_light {false};
     bool green_light {false};
-
+    std::cout << red_light << std::endl;
+    red_light = true;
     std::cout << red_light << std::endl;
     std::cout << green_light << std::endl; // or use std::boolalpha to return true of false
 
@@ -75,6 +76,31 @@ int main(int argc, char **argv){
     }else{
         std::cout << "Pass!" << std::endl;
     } 
+
+    // characters and text
+    char char_value = 65;
+    std::cout << char_value << std::endl;
+    std::cout << static_cast<int>(char_value) << std::endl;
+
+    char character1 {'a'};
+    std::cout << character1 << std::endl;
+
+    // Assignments in cpp after initialization
+    int var1{125};
+    std::cout << var1 << std::endl;
+    var1 = 55;
+    std::cout << var1 << std::endl;
+
+    double var2 {44.55};
+    std::cout << var2 << std::endl;
+    var2 = 99.99;
+    std::cout << var2 << std::endl;
+
+    // Potential problems with auto type deduction and assignments
+    auto var3 {333u};
+    std::cout << var3 << std::endl;
+    var3 = -22;
+    std::cout << var3 << std::endl;
 }
 
 /*
